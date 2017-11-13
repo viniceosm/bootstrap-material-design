@@ -12,6 +12,7 @@ $(document).ready(function () {
         $.ajax({
             url: 'https://api.instagram.com/v1/users/self/?access_token=' + token,
             method: 'GET',
+            crossDomain: true,
             success: function (data) {
                 console.log(data);
             }
