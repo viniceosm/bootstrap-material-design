@@ -7,6 +7,7 @@ $(document).ready(function () {
 
     if(typeof token!== 'undefined'){
         $('#btnAutenticar').html('autenticado');
+        $('#btnAutenticar').attr('disabled', 'true');
 
         $.ajax({
             url: 'https://api.instagram.com/v1/users/self/?access_token=' + token,
